@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Installing amillion-oss backend dependencies..."
+cd /opt/amillion-oss
+npm install
+
+echo "amillion-oss installation complete."
+echo "To start the server, run: /usr/local/bin/amillion-oss-start"
+
+# The following is an example of how to create a systemd service.
+# This requires systemd and root privileges.
+# echo "[Unit]" > /etc/systemd/system/amillion-oss.service
+# echo "Description=amillion-oss IDE Server" >> /etc/systemd/system/amillion-oss.service
+# echo "[Service]" >> /etc/systemd/system/amillion-oss.service
+# echo "ExecStart=/usr/bin/node /opt/amillion-oss/server.js" >> /etc/systemd/system/amillion-oss.service
+# echo "Restart=always" >> /etc/systemd/system/amillion-oss.service
+# echo "User=nobody" >> /etc/systemd/system/amillion-oss.service
+# echo "Group=nogroup" >> /etc/systemd/system/amillion-oss.service
+# echo "Environment=PATH=/usr/bin:/usr/local/bin" >> /etc/systemd/system/amillion-oss.service
+# echo "Environment=NODE_ENV=production" >> /etc/systemd/system/amillion-oss.service
+# echo "[Install]" >> /etc/systemd/system/amillion-oss.service
+# echo "WantedBy=multi-user.target" >> /etc/systemd/system/amillion-oss.service
+# systemctl daemon-reload
+# systemctl enable amillion-oss
+# systemctl start amillion-oss

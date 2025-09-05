@@ -1,0 +1,6 @@
+Package: amillion-oss
+Version: 1.0.0
+Architecture: all
+Maintainer: Gemini <gemini@google.com>
+Description: A web-based IDE with a VS Code-like feel.
+ Depends: nodejs, npm
